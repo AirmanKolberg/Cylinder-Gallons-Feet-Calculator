@@ -2,8 +2,8 @@
 
 This is a simple calculator script I've made to help me find the measurements of a cylinder, specifically a cylinder whose
 measurements can be taken in feet and gallons (since I am bound here in my home country, the USA, for quite some time).
-This script requires no additional dependencies be installed, simply download the `main.py` file, run it, and the rest
-should be pretty self-explanatory.  Enjoy!
+This script requires no additional dependencies be installed, simply download the `main.py` file and the `system_functions.py`
+file, run `python3 main.py`, and the rest should be pretty self-explanatory.  Enjoy!
 
 ---
 
