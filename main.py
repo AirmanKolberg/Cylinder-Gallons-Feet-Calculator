@@ -1,5 +1,6 @@
 from math import pi, sqrt
 from os import system
+from time import sleep
 
 
 # feet, feet;  returns gallons
@@ -74,6 +75,8 @@ diameter (d)
     else:
 
         print(f'{selection} is not valid, please try again.\n')
+        sleep(1)
+
         main_menu()
 
 
