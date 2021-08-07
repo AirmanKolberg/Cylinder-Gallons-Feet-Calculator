@@ -1,6 +1,6 @@
 from math import pi, sqrt
-from os import system
 from time import sleep
+from system_functions import clear_screen, get_float_value_from_user
 
 
 # feet, feet;  returns gallons
@@ -50,24 +50,24 @@ diameter (d)
 
     if selection == 'volume' or selection == 'v':
 
-        height = float(input('Height in feet: '))
-        diameter = float(input('Diameter in feet: '))
+        height = get_float_value_from_user('Height in feet: ')
+        diameter = get_float_value_from_user('Diameter in feet: ')
 
         volume = get_cylinder_volume(height, diameter)
         print(f'The volume of a cylinder with a height of {height}ft and diameter of {diameter}ft is:\n{volume} gallons')
 
     elif selection == 'height' or selection == 'h':
 
-        volume = float(input('Volume in gallons: '))
-        diameter = float(input('Diameter in feet: '))
+        volume = get_float_value_from_user('Volume in gallons: ')
+        diameter = get_float_value_from_user('Diameter in feet: ')
 
         height = get_cylinder_height(volume, diameter)
         print(f'The height of a cylinder with a volume of {volume}gal and diameter of {diameter}ft is:\n{height} feet')
 
     elif selection == 'diameter' or selection == 'd':
 
-        volume = float(input('Volume in gallons: '))
-        height = float(input('Height in feet: '))
+        volume = get_float_value_from_user('Volume in gallons: ')
+        height = get_float_value_from_user('Height in feet: ')
 
         diameter = get_cylinder_diameter(volume, height)
         print(f'The diameter of a cylinder with a volume of {volume}gal and height of {height}ft is:\n{diameter} feet')
@@ -82,6 +82,5 @@ diameter (d)
 
 if __name__ == '__main__':
 
-    _ = system('clear')
-
+    clear_screen()
     main_menu()
